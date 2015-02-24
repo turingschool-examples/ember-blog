@@ -1,0 +1,11 @@
+{{#blog-post post=content}}
+
+<ul>
+  {{#each comment in 'content.comments'}}
+    <li>{{comment.body}} &mdash; {{comment.author}}</li>
+  {{/each}}
+</ul>
+
+{{/blog-post}}
+
+<div>{{#link-to 'posts'}}&larr; Back{{/link-to}}</div>

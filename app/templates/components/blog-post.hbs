@@ -1,0 +1,9 @@
+<h2>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
+<h3>{{post.author}}</h3>
+<p>{{post.body}}</p>
+<p>Likes: {{post.likes}}</p>
+
+{{yield}}
+
+<button {{action 'likePost'}}>Like</button>
+<button {{action 'highlight'}}>Highlight</button>
